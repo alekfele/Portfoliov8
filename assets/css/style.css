@@ -2245,7 +2245,7 @@ textarea.form-control {
 
 .site-footer ul a {
   font-size: 12px;
-  color: #666;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -2390,3 +2390,79 @@ textarea.form-control {
     width: 36px;
   }
 }
+/* Ensure all carousels are not vertically superposed */
+.carousel-inner .item {
+  display: none;
+  position: relative;
+  transition: .6s ease-in-out left;
+}
+
+/* Display active carousel items */
+.carousel-inner .item.active {
+  display: block;
+}
+
+/* Style the images within the carousel */
+.carousel-inner .item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the indicators for better spacing */
+.carousel-indicators li {
+  background-color: #000;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* Additional spacing and alignment adjustments */
+.service-image img {
+  width: 100%;
+  height: auto;
+}
+    /* Styles pour les onglets */
+    .nav-tabs {
+      border: 0;
+      background-color: transparent;
+      margin-bottom: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+  }
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+      background-color: transparent;
+      border: 0;
+      border-bottom-color: transparent;
+      border-radius: 0;
+      color: #333;
+  }
+  .nav-tabs > li > a {
+      border: 0;
+      border-radius: 0;
+      color: #0474ec;
+      font-size: 18px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+  }
+  .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+      background-color: transparent;
+      border-color: transparent;
+      color: #0b0d0e;
+  }
+  .nav-tabs > li > a:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -1px;
+      left: 0;
+      background-color: #007bff;
+      transform: scale(0);
+      transition: transform 0.3s ease;
+  }
+  .nav-tabs > li.active > a:before, .nav-tabs > li:hover > a:before {
+      transform: scale(1);
+  }
