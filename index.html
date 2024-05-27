@@ -142,6 +142,8 @@
 						<div class="main-service text-left">
 							<div class="rectangle">
 							</div><!-- /.rectangle -->
+                            <h3> Aleksander Lefebvre</h3>
+                            <p>19 ans Permis b véhiculé</p>
 							</div><!-- /.main-service -->
 					</div>
 				</div>
@@ -309,15 +311,15 @@
                     <!-- Wrapper pour les diapositives des projets de stage -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="assets/img/slam.jpg" alt="Projet de Stage 1">
+                            <img src="assets/img/stage.png" alt="Projet de Stage 1">
                             <div class="carousel-caption">
-                                <p>Description du projet de stage 1</p>
+                                <p>Tableau de commande pour inventaire et compta</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/slam2.png" alt="Projet de Stage 2">
+                            <img src="assets/img/stage bd.png" alt="Projet de Stage 2">
                             <div class="carousel-caption">
-                                <p>Description du projet de stage 2</p>
+                                <p>Base de donnée de ce tableau</p>
                             </div>
                         </div>
                     </div>
@@ -432,16 +434,6 @@
                 <h3>Pix effectué pendant le BTS </h3>
             </div>
         </div>
-        <div class="project row">
-            <div class="col-md-6">
-                <img src="assets/img/faj.png" alt="Projet de Stage 2">
-            </div>
-            <div class="col-md-6">
-                <h3>Stage 2de année</h3>
-                <h4>logiciel d'inventaire et compta </h4>
-            </div>
-        </div>
-
     </div>
 </section>
 
@@ -449,35 +441,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-
-        <!-- Contacts section --> 
-        <section class="site-section section-contact" id="contact">
-            <div class="container">
-                <h2>Me contacter</h2>
-                <div class="row">
-                    <form>
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Nom" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input class="form-control" type="email" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Sujet" required>
-                        </div>
-                        <div class="col-sm-12">
-                            <textarea class="form-control" placeholder="votre message"  required></textarea>
-                        </div>
-
-                        <div class="col-sm-12">
-                            <button class="btn btn-inverted">envoyer le message</button>
-                        </div>  
-                    </form>
+<section class="site-section section-contact" id="contact">
+    <div class="container">
+        <h2>Me contacter</h2>
+        <div class="row">
+            <form action="send_mail.php" method="POST">
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="name" placeholder="Nom" required>
                 </div>
-            </div>
-        </section><!-- /.section-contact-->
-        <!-- End Contacts section --> 
-        
+                <div class="col-md-4">
+                    <input class="form-control" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="subject" placeholder="Sujet" required>
+                </div>
+                <div class="col-sm-12">
+                    <textarea class="form-control" name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-inverted" type="submit">Envoyer le message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
       
 
     </main><!-- /#main -->

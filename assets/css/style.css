@@ -31,8 +31,9 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
-
-/* 
+head,header,main,section{
+background-color:#1f1e1e01
+}/* 
  * Background colors 
  */
 .blue-bg {
